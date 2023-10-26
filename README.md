@@ -2,6 +2,8 @@
 To have an history of modification in the form of a tree instead of a stack wich lead in no loss of data in the short term (First idea is for a vscode plugin)
 (Basically it's git but working on RAM and with automatic commits when doing modifications and branching before commit if modifications after doing a ctrl-z... yes I could probably modify git's algorithm instead but..)
 
+**The VSCode extension will be there [ctrlztree-undotree-vscode](https://github.com/4skl/ctrlztree-undotree-vscode) for the sake of clarity, segmentation and easy publishing.**
+
 First we will be creating an api (receiving commands by a pipe) coded in c that will be storing the state and can return parts of the tree.
 
 ## Data structure / Definitions
