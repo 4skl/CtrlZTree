@@ -48,10 +48,11 @@ def lcs_diff(input1: str, input2: str) -> str:
     return input1[:start-1] + lcs_out + input1[i_end:], cache, start, i_end, j_end
 
 # computing and printnig the diff
-def print_diff(input1, input2, cache=None, i=None, j=None, start=None, i_end=None, j_end=None):
+def print_diff(input1, input2, cache=None, i=None, j=None):
     t_input1 = input1
     t_input2 = input2
     f_it = False
+    i_end = 0
     if cache is None:
         _, cache, start, i_end, j_end = lcs_diff(input1, input2)
         for c in input1[:start-1]:
